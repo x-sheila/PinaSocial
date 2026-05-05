@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <title>Feed - PinaSocial</title>
+        <link rel="stylesheet" href="../css/auth.css">
+        <link rel="stylesheet" href="../css/feed.css">
+    </head>
+    <body>
+             <div class="navbar">
+                <span>Pinasocial</span>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+
+            <div class="container">
+                <div class="post-form">
+                <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+                <button onclick="createPost()">Post</button>
+            </div>
+           <div id="posts-container"></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="../js/feed.js"></script>
+     </body>
+</html>
